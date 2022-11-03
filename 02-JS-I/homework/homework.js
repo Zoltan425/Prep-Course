@@ -109,11 +109,11 @@ function mayorQueCincuenta(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if (num > 50) {
-    var answer1 = 'true';
+    var answer1 = true;
   return answer1;
   } else {
     var igualdad
-    var answer2 = 'false'
+    var answer2 = false
   return answer2;
   }
 }
@@ -131,11 +131,11 @@ function esPar(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if ((num % 2) == 0) {
-    var answer1 = 'true';
+    var answer1 = true;
   return answer1;
   } else {
     var igualdad
-    var answer2 = 'false'
+    var answer2 = false
   return answer2;
   }
 }
@@ -208,10 +208,10 @@ function esPositivo(numero) {
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
   if (numero < 0) {
-    devolucion = "es negativo";
+    devolucion = "Es negativo";
     return devolucion
   } else if (numero > 0) {
-    devolucion = "es positivo";
+    devolucion = "Es positivo";
     return devolucion
   } else {
     devolucion = false;
@@ -231,7 +231,7 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  var combinacion = nombre + ' ' + apellido + '.'
+  var combinacion = nombre + ' ' + apellido 
   return combinacion
 }
 
