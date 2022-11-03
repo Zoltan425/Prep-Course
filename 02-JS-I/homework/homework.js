@@ -16,7 +16,7 @@ const nuevaResta = 10 - 5 === 5;
 const nuevaMultiplicacion = 10 * 4 === 40 ;
 
 // Resuelve el siguiente problema matemático:
-const nuevoModulo = 21 % 5 === 4.25;
+const nuevoModulo = 21 % 5 === 1;
 
 
 // En los próximos 22 problemas, deberás completar la función.
@@ -28,8 +28,7 @@ const nuevoModulo = 21 % 5 === 4.25;
 function devolverString(str) {
   // "Return" la string provista: str
   // Tu código:
-  var texto = 'hello world';
-  return texto
+  return str
   
 }
 
@@ -37,7 +36,7 @@ function suma(x, y) {
   // "x" e "y" son números
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
-  var suma = x + y
+  var suma = (x + y)
   return suma
 }
 
@@ -67,11 +66,11 @@ function sonIguales(x, y) {
   // De lo contrario, devuelve "false"
   // Tu código:
     if (x == y) {
-      var answer1 = 'true';
+      var answer1 = true;
   return answer1;
       
     } else {
-      var answer2 = 'false'
+      var answer2 = false
   return answer2;
     }  
   
@@ -82,10 +81,10 @@ function tienenMismaLongitud(str1, str2) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if (str1.length === str2.length) {
-    var answer1 = 'true';
+    var answer1 = true;
   return answer1;
   } else {
-    var answer2 = 'false'
+    var answer2 = false
   return answer2;
   }
   
@@ -96,11 +95,11 @@ function menosQueNoventa(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if (num < 90) {
-    var answer1 = 'true';
+    var answer1 = true;
   return answer1;
   } else {
     var igualdad
-    var answer2 = 'false'
+    var answer2 = false
   return answer2;
   }
 }
@@ -146,11 +145,11 @@ function esImpar(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if ((num % 2) == 0) {
-    var answer1 = 'false';
+    var answer1 = false;
     return answer1;
     } else {
       var igualdad
-      var answer2 = 'true'
+      var answer2 = true;
     return answer2;
     }
   
@@ -215,7 +214,7 @@ function esPositivo(numero) {
     devolucion = "es positivo";
     return devolucion
   } else {
-    devolucion = "false";
+    devolucion = false;
     return devolucion
   }
 }
@@ -287,18 +286,14 @@ function esVocal(letra){
   //Escribe tu código aquí
   
 if (letra.length > 1) {
-  var devolucion = "dato incorrecto1";
+  var devolucion = "Dato incorrecto";
   return devolucion
-} 
-if (letra === "a"||letra === "e"||letra ==="i"||letra ==="o"||letra ==="u"){
-  var vocales = "a"||"e"||"i"||"o"||"u";
-  var devolucion1 = "es vocal";
+} else if (letra === "a"||letra === "e"||letra ==="i"||letra ==="o"||letra ==="u"){
+  var devolucion1 = "Es vocal";
   return devolucion1
-} if (letra !== vocales) {
-  return "dato incorrecto"
 } 
 else {
-  var devolucion = "dato incorrecto";
+  var devolucion = "Dato incorrecto";
   return devolucion
 }
 }
